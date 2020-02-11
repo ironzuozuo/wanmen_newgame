@@ -1,0 +1,8 @@
+https://www.douban.com/note/656631861/     (详细)
+
+1.使用html = requests.get(url)
+2.检测网页真是编码
+  print(html.encoding)
+3.html = html.text.encode("uth-8")   (这里可以是其他编码)
+4.用其他方式解码
+ html  = html.decode('GB2312','ignore')
